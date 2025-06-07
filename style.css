@@ -17,18 +17,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: right;
+    align-items: center;
 }
 .nlinks {
     width: 60px;
-    border-radius: 50%;
-    background-color: rgba(128, 128, 128, 0.096);
+    height: 60px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: rgb(117, 117, 117);
+    border-radius: 35px;
+    box-shadow: 0px 0px 4px red;
+}
+.nlinks:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 8px rgb(255, 101, 101);
 }
 .nlinks img{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 
@@ -91,7 +98,7 @@
 
 .Mywork {
     width: 100vw;
-    background-color: rgb(59, 59, 59); 
+    background-color: rgb(153, 153, 153); 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,25 +122,24 @@
 }
 .ework{
     height: 400px;
-    width: 400px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 .eworkimg{
-    height: 70%;
-    width: 80%;
+    height: 80%;
+    width: 400px;
     background-color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    margin: 30px;
-    box-shadow: 5px 5px 3px black;
+    /* margin: 30px; */
+    box-shadow: 5px 5px 3px rgb(73, 73, 73);
 }
 .eworkpara{
-    height: 30%;
     width: 90%;
     text-align: center;
     display: flex;
@@ -150,13 +156,14 @@
 }
 
 .eworkimg:hover{
+    height: 60%;
     transform: scale(1.1);
     transition: 1s;
 }
 .eworkimg img:hover{
     transform: scale(0.9);
     transition: 1s;
-    box-shadow: -2px -2px 4px rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px rgb(255, 0, 0);
 }
 .ework:hover{
     color: aliceblue;
@@ -167,4 +174,60 @@
 }
 .ework h3{
     color: rgba(255, 76, 76, 0.596);
+    margin-top: 8px;
+}
+.eworkpara h3{
+    overflow-y: hidden;
+}
+.eworkpara p{
+    overflow-y: hidden;
+}
+@media (max-width:600px){
+    .eworkimg{
+        width: 70vw;
+    }   
+}
+@media (max-width:1000px){
+        .navber{
+            display: none;
+        }
+        .navbermb{
+            height: 20vh;
+            width: 100vw;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 85vh;
+        }
+        .ggmb {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .nlinksmb {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(117, 117, 117);
+            border-radius: 35px;
+            box-shadow: 0px 0px 4px red;
+        }
+        .nlinksmb:hover{
+            transform: scale(1.1);
+            box-shadow: 0px 0px 8px rgb(255, 101, 101);
+        }
+        .nlinksmb img{
+            height: 40px;
+            width: 40px;
+        } 
+}
+@media (min-width:1000px){
+    .navbermb{
+        display: none;
+    }
 }
