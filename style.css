@@ -53,15 +53,15 @@
     opacity: 0;
 }
 .ntext:hover{
-    box-shadow: 0px 0px 8px hsl(33, 100%, 67%);
+    box-shadow: 0px 0px 4px hsl(33, 100%, 69%);
 }
 .nlinks:hover .ntext{
     opacity: 1;
-    transition: 1s;
+    transition: 0.5s;
 }
 .ntext a{
     text-decoration: none;
-    color: hsl(32, 42%, 33%);
+    color: hsl(33, 100%, 50%);
 }
 .nlinks img{
     height: 40px;
@@ -122,27 +122,28 @@
     align-items: center;
     border-radius: 8px;
     box-shadow: 5px 5px 5px black;
+    transition: 0.5s;
 }
 .heroimage img{
     height: 97%;
     width: 97%;
     object-fit: cover;
     border-radius: 12px;
+    transition: 0.5s;
 }
 .heroimage:hover{
     transform: scale(1.005);
-    transition: 0.5s;
     box-shadow: -5px -5px 5px black;
 }
 .heroimage img:hover{
     transform: scale(0.95);
-    transition: 0.5s;
     box-shadow: 0px 0px 20px rgb(255, 0, 0);
 }
 
 .hero-right h1{
     font-size: 80px;
     text-shadow: 0px 0px 2px hsl(33, 100%, 50%);
+        transition: 0.5s;
 }
 .hero-right h2{
     font-size: 50px;
@@ -152,7 +153,6 @@
 }
 .hero-right h1:hover{
     color: hsl(33, 100%, 50%);
-    transition: 0.5s;
 }
 
 
@@ -203,6 +203,7 @@
     border-radius: 8px;
     /* margin: 30px; */
     box-shadow: 8px 8px 5px rgb(0, 0, 0);
+    transition: 1s;
 }
 .eworkpara{
     width: 90%;
@@ -218,17 +219,16 @@
     width: 95%;
     object-fit: cover;
     border-radius: 12px;
+    transition: 1s;
 }
 
 .eworkimg:hover{
     height: 65%;
     transform: scale(1.005);
         box-shadow: -8px -8px 5px rgba(0, 0, 0, 0.596);
-    transition: 1s;
 }
 .eworkimg img:hover{
     transform: scale(0.95);
-    transition: 1s;
     box-shadow: 0px 0px 20px rgb(255, 0, 0);
 }
 .ework:hover{
@@ -253,7 +253,7 @@
         width: 65vw;
     }   
 }
-@media (max-width:1000px){
+@media (max-width:1200px){
         .navber{
             display: none;
         }
@@ -293,8 +293,54 @@
             width: 40px;
         } 
 }
-@media (min-width:1000px){
+@media (min-width:1200px){
     .navbermb{
         display: none;
     }
+}
+
+
+
+.section3{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(Images/red.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.batquotes{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.quotes{
+    height: 80%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 245, 220, 0.384);
+    text-align: center;
+    border-radius: 8px;
+    border: 4px solid gray;
+    padding: 8px;
+    margin: 8px;
+    transition: 0.5s ease-in-out;
+}
+
+.quotes:hover{
+    width: 30%;
+}
+
+.heaad p{
+    color: hsl(32, 42%, 33%);
+    font-size: 70px;
+    text-align: center;
 }
