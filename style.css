@@ -3,7 +3,7 @@
 
 .navber{
     height: 100vh;
-    width: 8vw;
+    width: 12vw;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -19,23 +19,58 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.nlinks {
+.nlinks{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nlink {
     width: 60px;
     height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgb(0, 0, 0);
     border-radius: 35px;
-    box-shadow: 0px 0px 4px red;
+    box-shadow: 0px 0px 4px hsl(33, 100%, 50%);
 }
-.nlinks:hover{
-    transform: scale(1.1);
-    box-shadow: 0px 0px 8px rgb(255, 101, 101);
+.ntext{
+    display: flex;
+    text-decoration: none;
+    height: 40px;
+    width: 60%;
+    background-color: black;
+    border-radius: 16px;
+    color: rgb(255, 101, 101);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3px;
+    margin-right: 8px;
+    opacity: 0;
+}
+.ntext:hover{
+    box-shadow: 0px 0px 8px hsl(33, 100%, 67%);
+}
+.nlinks:hover .ntext{
+    opacity: 1;
+    transition: 1s;
+}
+.ntext a{
+    text-decoration: none;
+    color: hsl(32, 42%, 33%);
 }
 .nlinks img{
     height: 40px;
     width: 40px;
+}
+.nlink:hover{
+    box-shadow: 0px 0px 8px hsl(33, 100%, 67%);
+    transform: scale(1.05);
+    transition: 0.1s;
 }
 
 
@@ -49,6 +84,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(71, 32, 32);
+    background-image: url(Images/entr.png);
 }
 .boxx{
     width: 80%;
@@ -58,9 +94,9 @@
     align-items: center;
 }
 .hero-right{
-    width: 30%;
-    height: 40%;
-    padding-right: 5%;
+    width: 40%;
+    height: 100%;
+    padding-right: 0%;
     background-color: rgba(80, 80, 80, 0);
     display: flex;
     flex-direction: column;
@@ -69,10 +105,18 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+.hero-right h1{
+    color: rgb(210, 3, 11);
+}
+.hero-right p{
+    color: hsl(32, 42%, 33%);
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgb(255, 101, 101);
+}
 .heroimage {
     width: 30%;
     height: 80%;
-    background-color: rgb(61, 43, 43);
+    background-color: hsl(32, 42%, 33%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +142,7 @@
 
 .hero-right h1{
     font-size: 80px;
+    text-shadow: 0px 0px 2px hsl(33, 100%, 50%);
 }
 .hero-right h2{
     font-size: 50px;
@@ -105,12 +150,15 @@
 .hero-right h3{
     font-size: 30px;
 }
-
+.hero-right h1:hover{
+    color: hsl(33, 100%, 50%);
+    transition: 0.5s;
+}
 
 
 .Mywork {
     width: 100vw;
-    background-color: rgb(153, 153, 153); 
+    background-color: rgb(72, 23, 23); 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,6 +171,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.hed h1{
+    color: hsl(32, 42%, 33%);
+    font-size: 70px;
+    text-align: center;
 }
 .work{
     width: 80%;
@@ -143,13 +196,13 @@
 .eworkimg{
     height: 80%;
     width: 400px;
-    background-color: rgb(61, 43, 43);
+    background-color: hsl(32, 42%, 33%);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
     /* margin: 30px; */
-    box-shadow: 8px 8px 5px rgb(73, 73, 73);
+    box-shadow: 8px 8px 5px rgb(0, 0, 0);
 }
 .eworkpara{
     width: 90%;
@@ -168,12 +221,13 @@
 }
 
 .eworkimg:hover{
-    height: 60%;
-    transform: scale(1.1);
+    height: 65%;
+    transform: scale(1.005);
+        box-shadow: -8px -8px 5px rgba(0, 0, 0, 0.596);
     transition: 1s;
 }
 .eworkimg img:hover{
-    transform: scale(0.9);
+    transform: scale(0.95);
     transition: 1s;
     box-shadow: 0px 0px 20px rgb(255, 0, 0);
 }
@@ -196,7 +250,7 @@
 }
 @media (max-width:600px){
     .eworkimg{
-        width: 70vw;
+        width: 65vw;
     }   
 }
 @media (max-width:1000px){
@@ -211,6 +265,7 @@
             justify-content: center;
             align-items: center;
             margin-top: 78vh;
+            z-index: 1;
         }
         .ggmb {
             height: 50%;
