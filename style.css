@@ -106,7 +106,7 @@
 
 }
 .hero-right h1{
-    color: rgb(255, 101, 101);
+    color: hsl(33, 100%, 67%);
 }
 .hero-right p{
     color: hsl(32, 42%, 33%);
@@ -369,3 +369,66 @@
     font-size: 70px;
     text-align: center;
 }
+
+
+
+.report{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 101, 101);
+    display: flex;
+    justify-content: center;
+}
+.form{
+    height: 50vh;
+    width: 50vw;
+    background-color: hsl(33, 100%, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 
+.follow{
+    height: 100vh;
+    width: 10vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+.bxx{
+    height: 50%;
+    width:90%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.lft{
+    background-color: hsl(32, 42%, 33%);
+    width: 30%;
+    height: 70%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.rit{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flw p{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+.flinks{
+    display: flex;
+    background-color: hsl(32, 42%, 33%);
+    border-radius: 4px;
+    margin-left: -2%;
+} */
