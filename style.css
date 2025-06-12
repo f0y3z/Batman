@@ -384,14 +384,37 @@
 }
 .form{
     height: 50vh;
-    width: 50vw;
+    width: 70vw;
+    border-radius: 32px;
     background-color: hsl(33, 100%, 50%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-
+.location input{
+    height: 5vh;
+    width: 50vw;
+    background-color: rgb(255, 101, 101);
+    border-radius: 16px;
+    display: flex; 
+    flex-direction: column;
+}
+.descrip input{
+    height: 30vh;
+    background-color: rgb(255, 101, 101);
+    border-radius: 20px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+} 
+.btt button{
+    background-color: rgb(255, 101, 101);
+    height: 3vh;
+    width: 20vw;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px hsl(33, 100%, 67%);
+}
 
 .follow{
     height: 100vh;
@@ -533,4 +556,53 @@
         transform: scale(1.05);
         box-shadow: 0px 0px 4px rgb(255, 0, 0);
     }
+}
+@media (max-width:1200px){
+    
+        .section3{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(Images/red.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .batquotes{
+            height: 65vh;
+            width: 95vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .quotes{
+            width: 70vw;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(245, 245, 220, 0.384);
+            text-align: center;
+            border-radius: 8px;
+            border: 4px dashed gray;
+            padding: 8px;
+            margin: 8px;
+            transition: 0.5s ease-in-out;
+        }
+
+        .quotes:hover{
+            width: 75vw;
+            height: 50vh;
+        }
+
+        .heaad p{
+            color: hsl(32, 42%, 33%);
+            text-align: center;
+            font-size: 30px;
+        }
+        .heaad{
+            height: 5vh;
+        }
 }
